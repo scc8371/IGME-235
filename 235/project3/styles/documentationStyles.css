@@ -1,0 +1,93 @@
+@media screen and (max-width: 1600px){
+    h1{
+        opacity: 1;
+        font-size: 5vh;
+    }
+    h2{
+        text-align:left;
+    }
+    p{
+        margin: 0rem;
+        width: 90%;
+    }
+
+    header{
+        position: static;
+    }
+    
+}
+
+main{
+    display: initial;
+}
+
+@media screen and (max-width: 700px){
+    body{
+        grid-template-rows: 0.5fr 10fr 1fr 1fr 0.5fr;
+    }
+    p{
+        margin: 0rem;
+        width: 90%;
+    }
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3fr 1fr 1fr 0.5fr;
+    grid-template-areas: "header"
+                         "design"
+                         "future"
+                         "credits"
+                        "footer";
+    max-height: 300vh;
+    justify-content: center;
+}
+
+section#future{
+    margin-top: 25vh;
+    grid-area: future;
+}
+
+section#source{
+    margin-top: 5rem;
+    grid-area: credits;
+}
+section#design{
+    grid-area: design;
+}
+
+img{
+    max-width: 350px;
+    max-height: 10%;
+}
+
+footer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    grid-area: footer;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+section#pictures{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 90%;
+}   
+
+h1{
+    text-align: center;
+}
